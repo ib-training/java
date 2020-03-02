@@ -6,8 +6,7 @@ public class ExerciseNumbersAndStrings {
      * Adds a and b and returns the result
      */
     static int add(int a, int b) {
-        int sum = a+b;
-        return sum;
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -21,7 +20,7 @@ public class ExerciseNumbersAndStrings {
 
     /**
      * returns the number of digits of the number n
-     * <p>
+     *
      * countDigits(0) -> 1
      * countDigits(123) -> 3
      */
@@ -38,21 +37,21 @@ public class ExerciseNumbersAndStrings {
 
     /**
      * rounds the float number x
-     * <p>
+     *
      * round already exists - but as an exercise,
      * implement my_round without using round
      */
-    static float myRound(float x) {
+    static int myRound(float x) {
         throw new RuntimeException("not implemented");
     }
 
     /**
      * rounds the double number x
-     * <p>
+     *
      * round already exists - but as an exercise,
      * implement my_round without using round
      */
-    static double myRound(double x) {
+    static int myRound(double x) {
         throw new RuntimeException("not implemented");
     }
 
@@ -60,7 +59,7 @@ public class ExerciseNumbersAndStrings {
      * return true if n is divisible by d
      * return false otherwise
      */
-    static boolean isDivsible(int n, int d) {
+    static boolean isDivisible(int n, int d) {
         throw new RuntimeException("not implemented");
     }
 
@@ -73,9 +72,9 @@ public class ExerciseNumbersAndStrings {
     }
 
     /**
-     * Convert degrees to radians ("Grad in Bodenmaß")
+     * Convert degrees to radians ("Grad in Bogenmaß")
      */
-    static double radians(double radians) {
+    static double radians(double degrees) {
         throw new RuntimeException("not implemented");
     }
 
@@ -89,7 +88,7 @@ public class ExerciseNumbersAndStrings {
 
     /**
      * returns the binary representation of n
-     * <p>
+     *
      * binary(3) returns "11"
      * binary(16) returns "10000"
      * binary(15) returns "1111"

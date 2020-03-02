@@ -56,12 +56,12 @@ class ExerciseNumbersAndStringsTest {
 
     @Test
     void isDivsible() {
-        assertTrue(ExerciseNumbersAndStrings.isDivsible(12,3));
-        assertTrue(ExerciseNumbersAndStrings.isDivsible(12,4));
-        assertTrue(ExerciseNumbersAndStrings.isDivsible(1,1));
-        assertFalse(ExerciseNumbersAndStrings.isDivsible(12,5));
-        assertFalse(ExerciseNumbersAndStrings.isDivsible(5,12));
-        assertFalse(ExerciseNumbersAndStrings.isDivsible(1,3));
+        assertTrue(ExerciseNumbersAndStrings.isDivisible(12,3));
+        assertTrue(ExerciseNumbersAndStrings.isDivisible(12,4));
+        assertTrue(ExerciseNumbersAndStrings.isDivisible(1,1));
+        assertFalse(ExerciseNumbersAndStrings.isDivisible(12,5));
+        assertFalse(ExerciseNumbersAndStrings.isDivisible(5,12));
+        assertFalse(ExerciseNumbersAndStrings.isDivisible(1,3));
     }
 
     @Test
@@ -75,10 +75,17 @@ class ExerciseNumbersAndStringsTest {
 
     @Test
     void radians() {
+        assertEquals(0.0, ExerciseNumbersAndStrings.radians(0), 1e-5);
+        assertEquals(Math.PI/2.0, ExerciseNumbersAndStrings.radians(90), 1e-5);
+        assertEquals(Math.PI, ExerciseNumbersAndStrings.radians(180), 1e-5);
+        assertEquals(3*Math.PI/2, ExerciseNumbersAndStrings.radians(270), 1e-5);
+        assertEquals(2*Math.PI, ExerciseNumbersAndStrings.radians(360), 1e-5);
     }
 
     @Test
     void closeEnough() {
+        assertTrue(ExerciseNumbersAndStrings.closeEnough(1.1, 1.05, 0.1));
+        assertFalse(ExerciseNumbersAndStrings.closeEnough(1.1, 1.05, 0.001));
     }
 
     @Test
